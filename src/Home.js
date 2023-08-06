@@ -5,8 +5,8 @@ const Home = () => {
     const [blogs, setBlogs] = useState(null)
     const [isLoading,setIsLoading]=useState(true)
     const [error,setError]=useState()
-    
-    const apiUrl='  http://localhost:8000/blogs1'
+
+    const apiUrl='  http://localhost:8000/blogs'
 
 
     useEffect(()=>{
@@ -22,6 +22,7 @@ const Home = () => {
         .then(data=>{
           setBlogs(data)
           setIsLoading(false)
+          setError(null)
         })
         .catch(error=>{
           setError(error.message)
