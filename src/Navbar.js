@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
+//navbar component
 const Navbar = () => {
     return ( 
-        <div className="navbar flex border w-96 ">
+        <div className="navbar flex border w-96 "> 
             <h1>The Kb blog</h1>
 
             <div className="links">
