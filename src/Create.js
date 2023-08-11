@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const Create = () => {
 
@@ -6,6 +7,7 @@ const Create = () => {
     const [body,setBody]=useState('')
     const [author,setAuthor]=useState('mario')
     const [isLoading,setIsLoading]=useState(false)
+    const history=useHistory()
 
     const handleSubmit=(e)=>{
         e.preventDefault()
@@ -21,7 +23,10 @@ const Create = () => {
         }).then(()=>{
             console.log("new blog add")
             setIsLoading(false)
+            history.push('/')
+           
         })
+     
     }
     return (
         <div className="create">
