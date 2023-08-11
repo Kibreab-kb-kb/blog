@@ -28,8 +28,6 @@ const useFetch = (apiUrl) => {
         });
     }, 1000);
 
-    return ()=>console.log('clean up')
-    
   }, [apiUrl]); // Effect runs when apiUrl changes
 
   return { data, isLoading, error }; // Return data for external use
