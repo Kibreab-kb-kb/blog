@@ -1,3 +1,10 @@
 {
-  "blogs": []
+  "blogs": [
+    {
+      "title": "Kb blog",
+      "body": "this is all about kb ,we sing for him ,we dance for him we give anything we have for him ",
+      "author": "mario",
+      "id": 1
+    }
+  ]
 }
